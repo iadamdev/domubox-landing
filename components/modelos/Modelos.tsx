@@ -166,21 +166,13 @@ export default function Modelos({
             "Capsule es una casa modular de diseño futurista con líneas suaves y aerodinámicas. Se caracteriza por sus enormes ventanales panorámicos en los extremos y una llamativa iluminación LED integrada que resalta su aspecto de alta tecnología. Ideal para glamping de lujo o alojamientos que buscan un impacto visual vanguardista y memorable.",
         },
         {
-          title: "Características",
-          content: (
-            <ul className="list-disc pl-5 space-y-1">
-              <li>11.500 × 3.300 × 3.300 mm</li>
-              <li>Consumo máximo de energía: 12 kW</li>
-              <li>55 m2</li>
-              <li>4–8 personas</li>
-            </ul>
-          ),
-        },
-        {
-          title: "Plano de la casa",
-          content: (
-            <img src="/img/Capsule/capsule4.jpeg" alt="" className="w-80" />
-          ),
+          title: "Fichas técnicas",
+          fichas: [
+            {
+              name: "Capsule",
+              url: "/pdf/capsule/ft-capsule.pdf",
+            }
+          ],
         },
       ],
     },
