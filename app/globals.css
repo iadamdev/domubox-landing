@@ -25,3 +25,11 @@ html {
   --color-separator: #CCC3B0;
   --color-tipoclara: #717171;
 }
+/* Marquesina de la landing /casa-piloto */
+@keyframes deslizar {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[deslizar_38s_linear_infinite\] { animation: none; }
+}
