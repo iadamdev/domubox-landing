@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Chrome from "@/components/layout/Chrome";
 import MaintenancePage from "./maintenance/page";
 import { Playfair_Display, DM_Sans, Lexend } from "next/font/google";
 import Script from "next/script";
@@ -94,11 +93,7 @@ export default function RootLayout({
         {maintenance ? (
           <MaintenancePage />
         ) : (
-          <>
-            <Navbar />
-            {children}
-            <Footer />
-          </>
+          <Chrome>{children}</Chrome>
         )}
       </body>
     </html>

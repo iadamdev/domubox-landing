@@ -353,6 +353,40 @@ export default function CasaPiloto() {
         </div>
       </section>
 
+      {/* ── PIE MÍNIMO ───────────────────────────────────────
+          Sin menú: en una landing de pago cada enlace de salida es una fuga.
+          Solo marca, contacto y los legales que exigen Meta y Google Ads. */}
+      <footer className="bg-[#0c0d08] px-5 py-10 md:px-16">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="font-dmsans text-sm font-semibold tracking-[0.08em] text-white">
+              DOMUBOX IMPORT
+            </p>
+            <p className="mt-1 font-dmsans text-[12px] text-white/45">
+              Casas modulares · A Coruña
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-dmsans text-[12px] text-white/45">
+            <a href="tel:+34603894725" className="hover:text-white">
+              +34 603 894 725
+            </a>
+            <a href="mailto:info@domuboximport.com" className="hover:text-white">
+              info@domuboximport.com
+            </a>
+            <a href="/politica-privacidad" className="hover:text-white">
+              Privacidad
+            </a>
+            <a href="/aviso-legal" className="hover:text-white">
+              Aviso legal
+            </a>
+            <a href="/cookies" className="hover:text-white">
+              Cookies
+            </a>
+          </div>
+        </div>
+      </footer>
+
       <BarraMovil />
     </main>
   );
