@@ -28,7 +28,8 @@ export default function BarraMovil() {
           <p className="font-dmsans text-sm font-semibold leading-tight text-white">Visita con cita previa</p>
         </div>
         <a
-          href={wa(CTA.visita, "barra móvil")}
+          href={wa(CTA.visita)}
+          data-origen="barra móvil"
           target="_blank"
           rel="noopener noreferrer"
           className="shrink-0 rounded-full bg-white px-5 py-2.5 font-dmsans text-sm font-bold text-[#4f5516] active:scale-95"

@@ -5,10 +5,14 @@
 
 export const WA = "34603894725";
 
-/** Enlace de WhatsApp con mensaje prerrellenado. `origen` permite atribuir que CTA convirtio. */
-export function wa(mensaje: string, origen: string) {
-  const texto = `${mensaje}\n\n(Desde la web · ${origen})`;
-  return `https://wa.me/${WA}?text=${encodeURIComponent(texto)}`;
+/**
+ * Enlace de WhatsApp con mensaje prerrellenado.
+ * El mensaje va limpio: el prospecto no debe ver etiquetas internas de
+ * atribucion. El origen viaja por el Pixel (ver TrackWA), que es donde sirve
+ * para optimizar campanas.
+ */
+export function wa(mensaje: string) {
+  return `https://wa.me/${WA}?text=${encodeURIComponent(mensaje)}`;
 }
 
 export const CTA = {

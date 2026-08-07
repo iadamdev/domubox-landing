@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude/
+
+# Copias que genera la sincronización de iCloud: "Archivo 2.tsx"
+* [0-9].*

@@ -16,6 +16,7 @@ import Videos from "@/components/casapiloto/Videos";
 import Comparativa from "@/components/casapiloto/Comparativa";
 import Perfiles from "@/components/casapiloto/Perfiles";
 import Materiales from "@/components/materiales/Materiales";
+import TrackWA from "@/components/casapiloto/TrackWA";
 import { Reveal, Contador } from "@/components/casapiloto/Reveal";
 import BarraMovil from "@/components/casapiloto/BarraMovil";
 import { wa, CTA, FICHA, FAQS } from "@/lib/casaPiloto";
@@ -50,7 +51,8 @@ function BotonWA({
 
   return (
     <a
-      href={wa(mensaje, origen)}
+      href={wa(mensaje)}
+      data-origen={origen}
       target="_blank"
       rel="noopener noreferrer"
       className={`${base} ${estilos} ${className}`}
@@ -397,6 +399,7 @@ export default function CasaPiloto() {
       </footer>
 
       <BarraMovil />
+      <TrackWA />
     </main>
   );
 }

@@ -31,7 +31,8 @@ export default function Perfiles() {
           {PERFILES.map((p, i) => (
             <Reveal key={p.id} delay={i * 0.1}>
               <a
-                href={wa(CTA[p.mensaje], `perfil ${p.id}`)}
+                href={wa(CTA[p.mensaje])}
+                data-origen={`perfil ${p.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative flex h-full min-h-[22rem] flex-col justify-end overflow-hidden rounded-sm p-7 md:min-h-[26rem] md:p-9"
@@ -67,7 +68,8 @@ export default function Perfiles() {
           <p className="mt-8 text-center font-dmsans text-[13px] text-[#717171]">
             ¿Aún no sabes si tu parcela es apta?{" "}
             <a
-              href={wa(CTA.parcela, "parcela apta")}
+              href={wa(CTA.parcela)}
+              data-origen="parcela apta"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-[#4f5516] underline underline-offset-4 hover:no-underline"
