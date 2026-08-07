@@ -107,19 +107,21 @@ export default function CasaPiloto() {
             </span>
           </div>
 
-          <h1 className="max-w-4xl font-playfair text-[clamp(2.75rem,9vw,7.5rem)] leading-[0.92] tracking-[-0.02em] text-white">
-            No la juzgues
+          <h1 className="max-w-4xl font-playfair text-[clamp(2.5rem,8.2vw,7rem)] leading-[0.94] tracking-[-0.02em] text-white">
+            Otros venden
             <br />
-            por una foto.
+            renders.
             <br />
-            <span className="italic text-[#c9d67e]">Entra en ella.</span>
+            <span className="italic text-[#c9d67e]">Nosotros abrimos</span>
+            <br />
+            <span className="italic text-[#c9d67e]">la puerta.</span>
           </h1>
 
           <div className="mt-10 flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
             <p className="max-w-md font-dmsans text-[15px] leading-relaxed text-white/75">
-              Tenemos una <span className="text-white">Canary Luxury de 37 m²</span> montada y lista para
-              visitar en A Coruña. Dos dormitorios, baño completo y acabados de serie. Ven, ábrela y decide
-              después.
+              Tenemos una <span className="text-white">Canary Luxury de 37 m²</span> montada en A Coruña.
+              Dos dormitorios, baño completo y acabados de serie. Entra, tócala y decide con la casa
+              delante, no con un catálogo.
             </p>
 
             <div>
