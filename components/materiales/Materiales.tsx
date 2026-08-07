@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { useRevealTexts } from "@/hooks/useRevealTexts";
 
@@ -20,7 +22,7 @@ export default function Materiales() {
           {/* CARD 1 */}
           <div className="flex flex-col items-start md:items-center md:flex-row bg-[#F6F6F3] rounded-md overflow-hidden">
             <img
-              src="img/suelo-mat.png"
+              src="/img/suelo-mat.png"
               alt="Suelo"
               className="w-40 sm:w-[40%] h-auto object-contain"
             />
@@ -42,7 +44,7 @@ export default function Materiales() {
           {/* CARD 2 */}
           <div className="flex flex-col items-start md:items-center md:flex-row bg-[#F6F6F3]  rounded-md overflow-hidden">
             <img
-              src="img/techo-mat.png"
+              src="/img/techo-mat.png"
               alt="Suelo"
               className="w-40 sm:w-[40%] h-auto object-contain"
             />
@@ -64,7 +66,7 @@ export default function Materiales() {
           {/* CARD 3 */}
           <div className="flex flex-col items-start md:items-center md:flex-row bg-[#F6F6F3] rounded-md overflow-hidden">
             <img
-              src="img/murosext-mat.png"
+              src="/img/murosext-mat.png"
               alt="Suelo"
               className="w-40 sm:w-[40%] h-auto object-contain"
             />
@@ -87,7 +89,7 @@ export default function Materiales() {
           {/* CARD 4 */}
           <div className="flex flex-col items-start md:items-center md:flex-row bg-[#F6F6F3]  rounded-md overflow-hidden">
             <img
-              src="img/murosint-mat.png"
+              src="/img/murosint-mat.png"
               alt="Suelo"
               className="w-40 sm:w-[40%] h-auto object-contain"
             />

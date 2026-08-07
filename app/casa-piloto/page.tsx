@@ -15,6 +15,7 @@ import GaleriaH from "@/components/casapiloto/GaleriaH";
 import Videos from "@/components/casapiloto/Videos";
 import Comparativa from "@/components/casapiloto/Comparativa";
 import Perfiles from "@/components/casapiloto/Perfiles";
+import Materiales from "@/components/materiales/Materiales";
 import { Reveal, Contador } from "@/components/casapiloto/Reveal";
 import BarraMovil from "@/components/casapiloto/BarraMovil";
 import { wa, CTA, FICHA, FAQS } from "@/lib/casaPiloto";
@@ -269,6 +270,14 @@ export default function CasaPiloto() {
             </div>
           </Reveal>
         </div>
+      </section>
+
+      {/* ── DESPIECE TÉCNICO ─────────────────────────────────
+          Reutiliza el componente de la home: mismo modelo Canary y prueba
+          tecnica real. La audiencia esta en nivel Producto y compara
+          proveedores, asi que el detalle constructivo suma credibilidad. */}
+      <section className="bg-[#f7f5f0]">
+        <Materiales />
       </section>
 
       {/* ── FAQ ──────────────────────────────────────────────── */}
