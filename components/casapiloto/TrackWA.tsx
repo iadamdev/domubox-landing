@@ -2,18 +2,22 @@
 
 // Atribucion de los clics a WhatsApp.
 //
-// El origen NO viaja en el texto del mensaje: el prospecto no debe leer
-// etiquetas internas. Viaja al Pixel de Meta y al dataLayer, que es donde
-// sirve para optimizar campanas y saber que seccion convierte.
+// El codigo SOLO empuja al dataLayer. Quien decide que se envia a Meta, a GA4
+// o a cualquier otra plataforma es Google Tag Manager. Ventajas:
+//   · Anadir TikTok, LinkedIn o Ads no requiere tocar codigo ni desplegar.
+//   · El Consent Mode v2 se gestiona en un solo sitio, como exige la UE.
+//   · No hay riesgo de duplicar eventos llamando a fbq() por los dos caminos.
 //
-// Un unico listener delegado en document cubre todos los enlaces, incluidos
-// los renderizados en servidor, sin convertir media pagina en client component.
+// El origen NO viaja en el texto del mensaje de WhatsApp: el prospecto no debe
+// leer etiquetas internas. Viaja aqui, que es donde sirve.
+//
+// El clic en enlaces tel: no necesita nada de esto: GTM lo detecta solo con un
+// activador de enlaces.
 
 import { useEffect } from "react";
 
 declare global {
   interface Window {
-    fbq?: (...args: unknown[]) => void;
     dataLayer?: Record<string, unknown>[];
   }
 }
@@ -24,16 +28,10 @@ export default function TrackWA() {
       const enlace = (e.target as HTMLElement)?.closest?.('a[href*="wa.me"]');
       if (!enlace) return;
 
-      const origen = enlace.getAttribute("data-origen") ?? "sin origen";
-
-      // Lead para la optimizacion de campanas.
-      window.fbq?.("track", "Lead", {
-        content_name: "Casa piloto A Coruña",
-        content_category: origen,
+      window.dataLayer?.push({
+        event: "click_whatsapp",
+        origen: enlace.getAttribute("data-origen") ?? "sin origen",
       });
-      // Evento propio para desglosar por seccion en los informes.
-      window.fbq?.("trackCustom", "ClickWhatsApp", { origen });
-      window.dataLayer?.push({ event: "click_whatsapp", origen });
     };
 
     document.addEventListener("click", alClic);
