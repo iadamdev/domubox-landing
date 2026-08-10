@@ -11,6 +11,7 @@ import Autopromo from "@/components/autopromo/Autopromo";
 import WhatsappButton from "@/components/whatsappbutton/WhatsappButton";
 import Materiales from "@/components/materiales/Materiales";
 import CasaPilotoHome from "@/components/casapilotohome/CasaPilotoHome";
+import Confianza from "@/components/confianza/Confianza";
 import TrackWA from "@/components/casapiloto/TrackWA";
 import { useEffect } from "react"
 
@@ -32,6 +33,8 @@ export default function Home() {
     <main>
       <header id="header">
         <Header/>
+
+        <Confianza />
       </header>
 
       <section id="modelos">

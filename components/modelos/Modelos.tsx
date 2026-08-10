@@ -28,12 +28,18 @@ export default function Modelos({
     {
       name: "01. Canary",
       hasExtensions: true,
+      // Sesion fotografica profesional de la casa piloto de A Coruna.
+      // Es el unico modelo del que tenemos fotos reales propias: el resto
+      // sigue con las de catalogo hasta que haya unidades instaladas.
       images: [
-        "/img/Canary/canary11.webp",
-        "/img/Canary/canary7.jpeg",
-        "/img/Canary/canary2.jpeg",
-        "/img/Canary/canary3.jpeg",
-        "/img/Canary/canary4.jpeg",
+        "/real/_DSC6998.jpg", // exterior frontal con pergola
+        "/real/_DSC7009.jpg", // salon
+        "/real/_DSC6893.jpg", // cocina
+        "/real/_DSC6853.jpg", // dormitorio principal
+        "/real/_DSC6885.jpg", // bano con mampara
+        "/real/_DSC6975.jpg", // terraza
+        "/real/_DSC6990.jpg", // exterior lateral
+        "/real/_DSC7015.jpg", // unidad plegada, lista para transporte
       ],
       accordion: [
         {
