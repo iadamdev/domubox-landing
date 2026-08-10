@@ -4,13 +4,17 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 
+// Sesion fotografica profesional de la casa piloto de A Coruna.
+// Sustituye a las fotos genericas de catalogo que habia antes.
 const images = [
-  "/img/Canary/canary6.jpeg",
-  "/img/Capsule/capsule7.jpeg",
-  "/img/Canary/canary8.jpeg",
-  "/img/Capsule/capsule8.jpeg",
-  "/img/Apple/apple7.jpeg",
-  "/img/Canary/canary9.jpeg",
+  "/real/_DSC6998.jpg", // exterior con pergola
+  "/real/_DSC7009.jpg", // salon
+  "/real/_DSC6893.jpg", // cocina
+  "/real/_DSC6853.jpg", // dormitorio principal
+  "/real/_DSC6975.jpg", // terraza
+  "/real/_DSC6885.jpg", // bano con mampara
+  "/real/_DSC6956.jpg", // exterior lateral
+  "/real/_DSC6939.jpg", // comedor
 ];
 
 export default function SimpleGaleria() {

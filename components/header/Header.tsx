@@ -9,7 +9,7 @@ export default function Header() {
       {/* 🎥 Video de fondo */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/video/video-montaje.mp4"
+        src="/video/montaje-web.mp4"
         autoPlay
         loop
         muted

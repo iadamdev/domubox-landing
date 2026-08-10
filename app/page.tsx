@@ -10,6 +10,8 @@ import { useState } from "react";
 import Autopromo from "@/components/autopromo/Autopromo";
 import WhatsappButton from "@/components/whatsappbutton/WhatsappButton";
 import Materiales from "@/components/materiales/Materiales";
+import CasaPilotoHome from "@/components/casapilotohome/CasaPilotoHome";
+import TrackWA from "@/components/casapiloto/TrackWA";
 import { useEffect } from "react"
 
 
@@ -41,6 +43,8 @@ export default function Home() {
 
       <section id="galeria">
         <Galeria />
+
+        <CasaPilotoHome />
       </section>
       <section id="materiales">
         <Materiales/>
@@ -57,6 +61,7 @@ export default function Home() {
 
       {/* Whatsapp */}
       <WhatsappButton />
+      <TrackWA />
       {/* Modales */}
       <ModalPresupuesto
         isOpen={modalPresupuestoOpen}
