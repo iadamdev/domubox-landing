@@ -17,14 +17,16 @@ import Comparativa from "@/components/casapiloto/Comparativa";
 import Perfiles from "@/components/casapiloto/Perfiles";
 import Materiales from "@/components/materiales/Materiales";
 import TrackWA from "@/components/casapiloto/TrackWA";
+import DatosEstructurados from "@/components/seo/DatosEstructurados";
 import { Reveal, Contador } from "@/components/casapiloto/Reveal";
 import BarraMovil from "@/components/casapiloto/BarraMovil";
 import { wa, CTA, FICHA, FAQS } from "@/lib/casaPiloto";
 
 export const metadata: Metadata = {
-  title: "Casa piloto en A Coruña · Visítala | DOMUBOX IMPORT",
+  title: "Casa prefabricada visitable en A Coruña · Casa piloto",
   description:
-    "Canary Luxury de 37 m² montada y visitable en A Coruña. Dos dormitorios, baño completo y acabados de serie. Agenda tu visita por WhatsApp.",
+    "Casa prefabricada modular de 37 m² montada y visitable en A Coruña. Dos dormitorios, baño completo y acabados de serie incluidos. Ven a verla y agenda tu visita por WhatsApp.",
+  alternates: { canonical: "/casa-piloto" },
 };
 
 function BotonWA({
@@ -82,6 +84,7 @@ function Grano() {
 export default function CasaPiloto() {
   return (
     <main className="bg-[#f7f5f0] pb-20 md:pb-0">
+      <DatosEstructurados />
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative flex min-h-[96vh] items-end overflow-hidden bg-[#12130e]">
         <Image
@@ -98,7 +101,7 @@ export default function CasaPiloto() {
         {/* raíl vertical: recurso editorial */}
         <div className="absolute right-6 top-1/2 z-10 hidden -translate-y-1/2 md:block">
           <p className="font-dmsans text-[10px] tracking-[0.42em] text-white/35 [writing-mode:vertical-rl]">
-            DOMUBOX IMPORT · CANARY LUXURY · A CORUÑA
+            DOMUBOX IMPORT · CASAS PREFABRICADAS · A CORUÑA
           </p>
         </div>
 
@@ -106,7 +109,7 @@ export default function CasaPiloto() {
           <div className="mb-7 flex items-center gap-3">
             <span className="h-px w-10 bg-[#c9d67e]" />
             <span className="font-dmsans text-[10px] tracking-[0.32em] text-[#c9d67e] md:text-[11px]">
-              CASA PILOTO VISITABLE
+              CASA PREFABRICADA · A CORUÑA
             </span>
           </div>
 
@@ -122,9 +125,9 @@ export default function CasaPiloto() {
 
           <div className="mt-10 flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
             <p className="max-w-md font-dmsans text-[15px] leading-relaxed text-white/75">
-              Tenemos una <span className="text-white">Canary Luxury de 37 m²</span> montada en A Coruña.
-              Dos dormitorios, baño completo y acabados de serie. Entra, tócala y decide con la casa
-              delante, no con un catálogo.
+              Tenemos una <span className="text-white">casa prefabricada Canary Luxury de 37 m²</span>{" "}
+              montada en A Coruña. Dos dormitorios, baño completo y acabados de serie. Entra, tócala
+              y decide con la casa delante, no con un catálogo.
             </p>
 
             <div>

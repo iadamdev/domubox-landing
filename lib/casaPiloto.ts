@@ -68,8 +68,12 @@ export const COMPARATIVA = [
 /** FAQ: objeciones reales del avatar (35-60, propietario de parcela). */
 export const FAQS = [
   {
+    q: "¿Es una casa prefabricada o una casa modular?",
+    a: "Las dos cosas, y la diferencia es menos importante de lo que parece. Se fabrica en taller y llega terminada, que es lo que define a una casa prefabricada; y se construye por módulos que se despliegan en tu parcela, que es lo que la hace modular. Mucha gente busca «casa prefabricada» y otra mucha «casa modular» pensando en lo mismo: una vivienda de verdad, hecha fuera de obra y montada en días. Eso es exactamente lo que puedes venir a ver a A Coruña.",
+  },
+  {
     q: "¿Es una casa de verdad o un contenedor?",
-    a: "Es una vivienda modular desplegable con dos dormitorios, baño completo, cocina y salón. Estructura de acero galvanizado y paneles de grafeno con fibra de bambú. La forma más rápida de resolver la duda es entrar en ella: por eso tenemos una casa piloto montada en A Coruña que puedes visitar.",
+    a: "Es una casa prefabricada de verdad, no un contenedor marítimo adaptado: una vivienda modular desplegable con dos dormitorios, baño completo, cocina y salón. Estructura de acero galvanizado y paneles de grafeno con fibra de bambú. La forma más rápida de resolver la duda es entrar en ella: por eso tenemos una casa piloto montada en A Coruña que puedes visitar.",
   },
   {
     q: "¿Cuánto cuesta?",
