@@ -1,5 +1,6 @@
 "use client";
 
+import { modelo } from "@/lib/modelos";
 import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -31,21 +32,11 @@ export default function Modelos({
       // Sesion fotografica profesional de la casa piloto de A Coruna.
       // Es el unico modelo del que tenemos fotos reales propias: el resto
       // sigue con las de catalogo hasta que haya unidades instaladas.
-      images: [
-        "/real/_DSC6998.jpg", // exterior frontal con pergola
-        "/real/_DSC7009.jpg", // salon
-        "/real/_DSC6893.jpg", // cocina
-        "/real/_DSC6853.jpg", // dormitorio principal
-        "/real/_DSC6885.jpg", // bano con mampara
-        "/real/_DSC6975.jpg", // terraza
-        "/real/_DSC6990.jpg", // exterior lateral
-        "/real/_DSC7015.jpg", // unidad plegada, lista para transporte
-      ],
+      images: modelo("canary")!.imagenes,
       accordion: [
         {
           title: "Descripción",
-          content:
-            "La Canary es una vivienda modular desplegable que combina diseño contemporáneo, confort y facilidad de instalación. Su sistema plegable permite un transporte eficiente y un rápido montaje, transformándose en un espacio habitable completo en muy poco tiempo. Destaca por su distribución funcional, su alto nivel de aislamiento y sus acabados de calidad, con amplias zonas acristaladas que aportan luminosidad y sensación de amplitud. Es una solución versátil, ideal tanto para uso residencial como para proyectos turísticos, oficinas o alojamientos temporales en cualquier entorno.",
+          content: modelo("canary")!.descripcion,
         },
         {
           title: "Fichas técnicas",
@@ -69,18 +60,11 @@ export default function Modelos({
     {
       name: "02. Family",
       hasExtensions: false,
-      images: [
-        "/img/Family/family1.png",
-        "/img/Family/family6.png",
-        "/img/Family/family2.png",
-        "/img/Family/family3.png",
-        "/img/Family/family5.png",
-      ],
+      images: modelo("family")!.imagenes,
       accordion: [
         {
           title: "Descripción",
-          content:
-            "Esta casa modular adaptable ofrece un diseño tradicional y acogedor. El modelo destaca por su tejado a dos aguas y su gran puerta corrediza de cristal central, que facilita la conexión con el entorno. Incluye un espacio exterior cubierto (pérgola o porche), perfecto para el esparcimiento al aire libre. Es la opción ideal para quienes buscan la rapidez de la construcción modular con el aspecto atemporal de una vivienda familiar permanente.",
+          content: modelo("family")!.descripcion,
         },
         {
           title: "Fichas técnicas",
@@ -96,18 +80,11 @@ export default function Modelos({
     {
       name: "03. Apple",
       hasExtensions: false,
-      images: [
-        "/img/Apple/apple5.jpeg",
-        "/img/Apple/apple6.jpeg",
-        "/img/Apple/apple2.jpeg",
-        "/img/Apple/apple3.jpeg",
-        "/img/Apple/apple4.jpeg",
-      ],
+      images: modelo("apple")!.imagenes,
       accordion: [
         {
           title: "Descripción",
-          content:
-            "Este módulo ofrece un diseño futurista y vanguardista, caracterizado por sus líneas curvas suaves y su estética limpia en color blanco. Destaca su amplia terraza frontal cubierta, enmarcada por lamas de madera clara, y una escalera exterior flotante que lleva a una terraza superior (rooftop). La gran fachada de cristal asegura máxima luminosidad. Ideal para proyectos de glamping de lujo o alojamientos vacacionales que buscan un impacto visual único y moderno.",
+          content: modelo("apple")!.descripcion,
         },
         {
           title: "Características",
@@ -131,18 +108,11 @@ export default function Modelos({
     {
       name: "04. Nordic",
       hasExtensions: false,
-      images: [
-        "/img/Nordic/nordic5.jpeg",
-        "/img/Nordic/nordic6.jpeg",
-        "/img/Nordic/nordic2.jpeg",
-        "/img/Nordic/nordic3.jpeg",
-        "/img/Nordic/nordic4.jpeg",
-      ],
+      images: modelo("nordic")!.imagenes,
       accordion: [
         {
           title: "Descripción",
-          content:
-            "El modelo Nordic presenta un diseño modular minimalista con un imponente tejado a dos aguas que se integra en una fachada de cristal de doble altura, garantizando vistas espectaculares. Su revestimiento en chapa metálica oscura aporta una estética moderna, industrial y escandinava.",
+          content: modelo("nordic")!.descripcion,
         },
         {
           title: "Fichas técnicas",
@@ -158,18 +128,11 @@ export default function Modelos({
     {
       name: "05. Capsule",
       hasExtensions: false,
-      images: [
-        "/img/Capsule/capsule2.png",
-        "/img/Capsule/capsule1.jpeg",
-        "/img/Capsule/capsule6.jpeg",
-        "/img/Capsule/capsule5.png",
-        "/img/Capsule/capsule3.png",
-      ],
+      images: modelo("capsule")!.imagenes,
       accordion: [
         {
           title: "Descripción",
-          content:
-            "Capsule es una casa modular de diseño futurista con líneas suaves y aerodinámicas. Se caracteriza por sus enormes ventanales panorámicos en los extremos y una llamativa iluminación LED integrada que resalta su aspecto de alta tecnología. Ideal para glamping de lujo o alojamientos que buscan un impacto visual vanguardista y memorable.",
+          content: modelo("capsule")!.descripcion,
         },
         {
           title: "Fichas técnicas",
