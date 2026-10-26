@@ -174,7 +174,7 @@ export const LANDINGS: Pagina[] = [
     h1: "Llega como un contenedor.",
     h1Acento: "Se abre como una casa.",
     entradilla:
-      "Si buscas una casa contenedor es porque quieres algo rápido, transportable y sin obra. Nuestra casa cumple las tres cosas, pero sin las limitaciones de vivir dentro de un contenedor marítimo.",
+      "Si buscas una casa contenedor, un contenedor vivienda o una casa hecha con contenedores, es porque quieres algo rápido, transportable y sin obra. Nuestra casa cumple las tres cosas, pero sin las limitaciones de vivir dentro de un contenedor marítimo.",
     imagen: "/real/hf-plegada.jpg",
     origen: "seo contenedor",
     secciones: [
@@ -215,6 +215,10 @@ export const LANDINGS: Pagina[] = [
       {
         q: "¿Cuánto tarda en montarse?",
         a: "El despliegue en la parcela se hace en días, una vez preparada la base y las acometidas.",
+      },
+      {
+        q: "¿Hacéis casas de contenedores en Galicia?",
+        a: "Hacemos la alternativa: una casa modular que se transporta con las medidas de un contenedor y se despliega como vivienda. La instalamos en toda Galicia y tienes una montada para visitar en A Coruña.",
       },
       {
         q: "¿Es más barata que un contenedor marítimo adaptado?",
@@ -299,6 +303,67 @@ export const LANDINGS: Pagina[] = [
       titulo: "Compárala con un mobil home en persona",
       texto: "Ven a la casa piloto de A Coruña y decide con las dos opciones claras.",
       mensaje: "Hola, estaba mirando mobil homes y me interesa vuestra casa modular. ¿Me dais información?",
+    },
+  },
+  // Busquedas locales nuevas (23 sep - 25 oct): Santiago 33, Ferrol 28,
+  // Carballo 18. Una pagina con las tres para no duplicar contenido.
+  {
+    ruta: "/casas-prefabricadas-santiago-de-compostela",
+    tipo: "landing",
+    title: "Casas prefabricadas en Santiago de Compostela, Ferrol y Carballo",
+    description:
+      "Casas prefabricadas y modulares en Santiago de Compostela, Ferrol, Carballo y sus comarcas. Ven a ver nuestra casa piloto en A Coruña antes de decidir.",
+    kicker: "SANTIAGO · FERROL · CARBALLO",
+    h1: "Casas prefabricadas en Santiago,",
+    h1Acento: "Ferrol y Carballo.",
+    entradilla:
+      "Vivas en Santiago, en Ferrol o en la Costa da Morte, la casa piloto está a menos de una hora. Ven a recorrerla y sal con un presupuesto cerrado para tu parcela.",
+    imagen: "/real/hf-paisaje.jpg",
+    origen: "seo santiago",
+    mostrarModelos: true,
+    secciones: [
+      {
+        h2: "Instalamos en toda la provincia, no solo en A Coruña",
+        p: [
+          "Trabajamos en Santiago de Compostela y su comarca (Ames, Teo, Brión, Oroso, Ordes, Boqueixón o Vedra), en Ferrol y en Ferrolterra (Narón, Fene, Neda, Ares, Mugardos), y en Carballo y la Costa da Morte.",
+          "La casa llega plegada en camión y se monta en días. La distancia no cambia el sistema: lo que importa es que el camión y la grúa puedan acceder a la parcela.",
+        ],
+      },
+      {
+        h2: "Antes de nada, mira tu parcela",
+        p: [
+          "Cada concello tiene su plan general, y es el que decide si se puede levantar una vivienda. En suelo urbano y en núcleo rural lo habitual es que sí; en suelo rústico la vivienda nueva está muy limitada.",
+          "Es lo primero que revisamos contigo, para que sepas si es viable antes de invertir nada.",
+        ],
+      },
+      {
+        h2: "La casa piloto, a un paseo",
+        p: [
+          "Tenemos una Canary Luxury de 37 m² montada en A Coruña, a unos 45 minutos de Santiago, 40 de Carballo y media hora de Ferrol. Se visita con cita previa: la recorres, tocas los materiales y hablamos de tu parcela concreta.",
+        ],
+        imagen: "/real/_DSC6998.jpg",
+        pie: "Casa piloto Canary Luxury, montada en A Coruña.",
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Instaláis en Santiago, Ferrol y Carballo?",
+        a: "Sí, en toda la provincia de A Coruña y en el resto de Galicia.",
+      },
+      {
+        q: "¿Tengo que ir a A Coruña para ver la casa?",
+        a: "Es lo recomendable, porque es la única forma de comprobar los metros y los acabados reales. Escríbenos y buscamos un hueco que te encaje.",
+      },
+    ],
+    relacionados: [
+      "/casas-prefabricadas-a-coruna",
+      "/blog/licencia-casa-prefabricada-galicia",
+      "/blog/casas-prefabricadas-cte",
+    ],
+    cta: {
+      titulo: "Agenda tu visita",
+      texto: "Dinos desde dónde vienes y te reservamos la casa piloto.",
+      mensaje: "Hola, estoy en la zona de Santiago, Ferrol o Carballo y me interesa una casa prefabricada. ¿Me dais información?",
     },
   },
 ];

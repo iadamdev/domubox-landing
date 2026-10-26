@@ -12,6 +12,7 @@ export default function Footer() {
           <ul className="space-y-2 text-white/85">
             <li><Link href="/casas-prefabricadas-galicia">Casas prefabricadas en Galicia</Link></li>
             <li><Link href="/casas-prefabricadas-a-coruna">Casas prefabricadas en A Coruña</Link></li>
+            <li><Link href="/casas-prefabricadas-santiago-de-compostela">Santiago, Ferrol y Carballo</Link></li>
             <li><Link href="/casa-contenedor">Casa contenedor</Link></li>
             <li><Link href="/mobil-home-galicia">Mobil home en Galicia</Link></li>
             <li><Link href="/casa-piloto">Casa piloto visitable</Link></li>

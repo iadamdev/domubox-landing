@@ -411,4 +411,84 @@ export const ARTICULOS: Pagina[] = [
       mensaje: "Hola, estoy mirando financiar una casa prefabricada y necesito un presupuesto cerrado.",
     },
   },
+  // "casas prefabricadas cte" 18 impresiones y 2 conversiones (23 sep - 25 oct).
+  // No afirmamos que los modelos tengan certificacion CTE: no esta confirmado.
+  {
+    ruta: "/blog/casas-prefabricadas-cte",
+    tipo: "articulo",
+    fecha: "2026-10-26",
+    title: "Casas prefabricadas y el CTE: qué exige la normativa y qué pedir",
+    description:
+      "Qué es el Código Técnico de la Edificación, por qué también se aplica a las casas prefabricadas y modulares, y qué documentación pedir antes de comprar.",
+    kicker: "NORMATIVA",
+    h1: "Casas prefabricadas y el CTE:",
+    h1Acento: "qué exige y qué pedir.",
+    entradilla:
+      "Si una casa prefabricada va a ser tu vivienda, tiene que cumplir las mismas reglas técnicas que cualquier casa. Te explicamos qué es el CTE y qué preguntar antes de firmar.",
+    imagen: "/real/hf-materiales.jpg",
+    origen: "seo blog cte",
+    secciones: [
+      {
+        h2: "Qué es el CTE",
+        p: [
+          "El Código Técnico de la Edificación es la norma que fija en España los requisitos básicos que debe cumplir un edificio de viviendas: que sea seguro, habitable y eficiente. No distingue cómo se construye la casa, sino qué prestaciones tiene que ofrecer.",
+          "Por eso afecta igual a una casa de obra que a una prefabricada o modular que se vaya a usar como vivienda.",
+        ],
+      },
+      {
+        h2: "Los apartados que más importan en una casa prefabricada",
+        p: ["El CTE se organiza en documentos básicos. En una vivienda prefabricada, los que más conviene revisar son estos:"],
+        lista: [
+          "Seguridad estructural: que la estructura y la cimentación soporten las cargas, también viento y nieve según la zona",
+          "Ahorro de energía: aislamiento y consumo, muy importante en el clima gallego",
+          "Salubridad: humedad, ventilación y agua, otro punto clave en Galicia",
+          "Seguridad en caso de incendio",
+          "Protección frente al ruido",
+          "Seguridad de utilización y accesibilidad",
+        ],
+      },
+      {
+        h2: "Quién lo comprueba",
+        p: [
+          "Para obtener la licencia de una vivienda, el concello pide normalmente un proyecto técnico firmado por un arquitecto. En ese proyecto se justifica que la vivienda, incluida la casa prefabricada y su cimentación, cumple el CTE. Es decir, el cumplimiento se valida para tu casa en tu parcela, no solo en un catálogo.",
+        ],
+      },
+      {
+        h2: "Qué pedir antes de comprar",
+        p: ["Antes de firmar, pide al fabricante o al importador:"],
+        lista: [
+          "La ficha técnica de cada modelo, con materiales, aislamiento y estructura",
+          "Los datos de transmitancia térmica de cerramientos y ventanas",
+          "La documentación técnica que necesitará el arquitecto para redactar el proyecto",
+          "Qué parte del proyecto y de la tramitación está incluida en el precio",
+        ],
+      },
+      {
+        h2: "Cómo lo trabajamos",
+        p: [
+          "Tenemos fichas técnicas de cada modelo y te pasamos la documentación que necesite tu arquitecto. Y si quieres comprobar materiales y aislamiento en persona, la casa piloto de A Coruña está montada para eso.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "¿Una casa prefabricada tiene que cumplir el CTE?",
+        a: "Sí, si se va a usar como vivienda. La norma fija prestaciones, no un sistema constructivo, así que se aplica igual a una casa prefabricada o modular.",
+      },
+      {
+        q: "¿Quién certifica que se cumple?",
+        a: "Se justifica en el proyecto técnico que acompaña a la licencia, firmado por un técnico competente, para la casa concreta en su parcela.",
+      },
+    ],
+    relacionados: [
+      "/blog/licencia-casa-prefabricada-galicia",
+      "/blog/cuanto-cuesta-casa-prefabricada-galicia",
+      "/casas-prefabricadas-galicia",
+    ],
+    cta: {
+      titulo: "Pide la documentación técnica",
+      texto: "Te enviamos las fichas de los modelos para que las revise tu arquitecto.",
+      mensaje: "Hola, quiero la documentación técnica de vuestras casas para revisar el CTE con mi arquitecto.",
+    },
+  },
 ];

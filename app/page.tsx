@@ -14,6 +14,7 @@ import CasaPilotoHome from "@/components/casapilotohome/CasaPilotoHome";
 import Confianza from "@/components/confianza/Confianza";
 import TrackWA from "@/components/casapiloto/TrackWA";
 import { useEffect } from "react"
+import EnlacesHome from "@/components/seo/EnlacesHome";
 
 
 export default function Home() {
@@ -58,6 +59,7 @@ export default function Home() {
       <section >
         <Autopromo />
       </section>
+      <EnlacesHome />
       <section id="formpresupuesto">
         <FormPresupuesto />
       </section>
